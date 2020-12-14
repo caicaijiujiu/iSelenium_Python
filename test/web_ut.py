@@ -10,11 +10,11 @@ from selenium.webdriver.chrome.options import Options
 
 
 @allure.feature('Test Baidu WebUI')
-class ISelenium(unittest.TestCase):
+class TestISelenium(unittest.TestCase):
     # 读入配置文件
     def get_config(self):
         config = configparser.ConfigParser()
-        config.read(os.path.join(os.environ['HOME'], 'iselenium.ini'))
+        config.read(os.path.join(os.environ['MYHOMEI'], 'iselenium.ini'))
         return config
 
     def tearDown(self):
