@@ -14,8 +14,8 @@ class TestISelenium(unittest.TestCase):
     # 读入配置文件
     def get_config(self):
         config = configparser.ConfigParser()
-        config.read(os.path.join(os.environ['HOME'], 'iselenium.ini'))
-        # chrome_driver = D:\Python38\chromedriver   我windows的   MYPATHI  =D:/
+        config.read(os.path.join(os.environ['MYHOMEI'], 'iselenium.ini'))
+        # chrome_driver = D:\Python38\chromedriver   我windows的   MYHOMEI  =D:/
         # /usr   ubuntu的  MYPATHI= /home/cai
         return config
 
