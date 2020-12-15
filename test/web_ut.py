@@ -14,7 +14,7 @@ class TestISelenium(unittest.TestCase):
     # 读入配置文件
     def get_config(self):
         config = configparser.ConfigParser()
-        config.read(os.path.join(os.environ['MYPATHI'], 'iselenium.ini'))
+        config.read(os.path.join(os.environ['MYHOMEI'], 'iselenium.ini'))
         # windows：
         #       chrome_driver = D:\Python38\chromedriver     MYHOMEI  =D:\   iselenium.ini就放d盘就行
         # ubuntu
